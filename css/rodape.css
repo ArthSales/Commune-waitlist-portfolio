@@ -1,0 +1,33 @@
+.rodape {
+    margin: 2em;
+}
+
+.rodape__titulo {
+    font-weight: 700;
+    color: var(--cor-fonte-secundaria);
+    margin-bottom: 1em;
+}
+.rodape__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.lista__item {
+    margin-right: 1.5em;
+}
+
+.lista__icone {
+    width: 8vw;
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .rodape__titulo {
+        font-size: 36px;
+    }
+
+    .rodape {
+        margin: 3.3em;
+    }
+}

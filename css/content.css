@@ -1,0 +1,125 @@
+.principal__conteudo,
+.principal__conteudo-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1em;
+}
+
+.principal__botao {
+    width: auto;
+    background-color: var(--cor-primaria);
+    color: var(--cor-de-fundo);
+    font-size: 28px;
+    text-decoration: none;
+    padding: 1em 1.5em;
+    border-radius: 48px;
+}
+
+.veja__mais {
+    text-decoration: underline;
+}
+
+.principal__titulo {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 1em;
+}
+
+.principal__texto {
+    font-size: 16px;
+    line-height: 1.5em;
+    color: var(--cor-fonte-secundaria);
+}
+
+.principal__email {
+    text-align: left;
+    font-size: 20px;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 8px;
+    width: 80%;
+    padding: 1em;
+    margin: 1em;
+    opacity: .5;
+}
+
+.principal__botao-2 {
+    width: 80%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-de-fundo);
+    font-size: 24px;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 8px;
+    transition: ease 1.5s;
+}
+
+.principal__conteudo-2 {
+    width: 100%;
+}
+
+
+.principal__imagem {
+    display: none;
+}
+
+@media screen and (min-width: 720px) {
+    
+    .principal__conteudo-2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .principal__imagem {
+        display: block;
+        width: 40vw;
+        height: 40vh;
+        padding: 0 3em 3em 3em;
+    }
+    
+    .principal {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5em;
+    }
+
+    .principal__conteudo {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .principal__titulo {
+        margin: 0;
+        padding: 1em 0.5em;
+        font-size: 60px;
+    }
+
+    .principal__texto {
+        padding: 0 0 0 1em;
+        font-size: 24px;
+    }
+
+    .principal__email {
+        width: 40%;
+    }
+
+    .principal__botao-2 {
+        width: 25%;
+    }
+
+    .veja__mais:hover,
+    .principal__botao-2:hover {
+        color: var(--cor-complementar);
+    }
+
+    .principal__botao-2:hover {
+        width: 35%;
+    }
+}

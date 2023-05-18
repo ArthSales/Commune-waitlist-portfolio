@@ -1,0 +1,121 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1em;
+}
+
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Hamburger-Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 0.5em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 55%;
+    width: 35vw;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 0.5em;
+    background-color: var(--cor-de-fundo);
+}
+
+.lista-menu__titulo {
+    color: var(--cor-primaria);
+    font-size: 16px;
+}
+
+.lista-menu__link {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container__botao {
+    display: none;
+}
+
+.lista-menu__item:hover {
+    background-color: var(--cor-primaria);
+}
+
+.lista-menu__item:hover~.lista-menu__link {
+    color: var(--cor-de-fundo);
+}
+
+.lista-cabecalho {
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+    
+    .container {
+        padding: 2em;
+    }
+    
+    .logo {
+        width: 15vw;
+    }
+    .lista-cabecalho {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.3em;
+        text-align: center;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    .lista-cabecalho__link {
+        text-decoration: none;
+        font-weight: 500;
+        padding: 1em;
+        color: var(--cor-fonte-secundaria);
+    }
+
+    .link__principal {
+        background-color: var(--cor-primaria);
+        color: var(--cor-de-fundo);
+        padding: 1em;
+        border-radius: 8px;
+        transition: ease 2s;
+    }
+
+    .lista-cabecalho__link:hover {
+        background-color: var(--cor-primaria);
+        color: var(--cor-de-fundo);
+        border-radius: 8px;
+        
+    }
+
+    .link__principal:hover {
+        padding: 1em 2em;
+        color: var(--cor-complementar);
+    }
+}
